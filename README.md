@@ -2,4 +2,4 @@
 Python flask PostgreSQL Heroku deployed
 
 
-deployed on onlineshopfeedback.herokuapp.com
+deployed on https://onlineshopfeedback.herokuapp.com/
