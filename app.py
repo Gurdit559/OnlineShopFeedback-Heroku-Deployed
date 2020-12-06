@@ -7,11 +7,11 @@ app=Flask(__name__)
 env='prod'
 if env=='dev':
     app.debug=True
-    app.config['SQLALCHEMY_DATABASE_URI']='postgresql://postgres:root@localhost/f_form'
+    app.config['SQLALCHEMY_DATABASE_URI']=''
 
 else:
     app.debug=False
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://nycberwonqlmvw:ab8c4d80eb8f15cf61cdb3687f6c2a05d089445b49053073a388774f7a6a11da@ec2-3-216-89-250.compute-1.amazonaws.com:5432/der592qr6q8kjd'
+    app.config['SQLALCHEMY_DATABASE_URI'] = ''
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
 db=SQLAlchemy(app) #create database object
